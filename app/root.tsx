@@ -62,8 +62,16 @@ export const Head = createHead(() => (
     <Meta />
     <Links />
     <script dangerouslySetInnerHTML={{ __html: inlineThemeCode }} />
+
+    {/* Google AdSense */}
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5983023847796180"
+      crossOrigin="anonymous"
+    ></script>
   </>
 ));
+
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const theme = useStore(themeStore);
